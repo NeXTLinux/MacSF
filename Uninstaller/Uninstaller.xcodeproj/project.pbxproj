@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -59,11 +59,11 @@
 		4BE4905310445DDD006BE471 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BE4905410445DDD006BE471 /* Launchd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Launchd.plist; sourceTree = "<group>"; };
 		4BE4905510445DDD006BE471 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4BE4905D10445E0A006BE471 /* com.nextlinux.macsf.configHelper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "com.nextlinux.macsf.configHelper"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BE4905D10445E0A006BE471 /* com.nextlinux.macsf.configHelper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = com.nextlinux.macsf.configHelper; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BE4906310445F2F006BE471 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		4BE4906710445F36006BE471 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
 		8D1107320486CEB800E47090 /* MacSF Uninstaller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MacSF Uninstaller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A58F39C82A09125800178E18 /* com.nextlinux.macsf.configHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = "com.nextlinux.macsf.configHelper.entitlements"; path = "helper/com.nextlinux.macsf.configHelper.entitlements"; sourceTree = "<group>"; };
+		A58F39C82A09125800178E18 /* com.nextlinux.macsf.configHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = com.nextlinux.macsf.configHelper.entitlements; path = helper/com.nextlinux.macsf.configHelper.entitlements; sourceTree = "<group>"; };
 		BF04235411C0531400431286 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BF04235511C0531400431286 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BF65C19011B985C0007C20AB /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
@@ -85,7 +85,7 @@
 		CDA6E62C203B674C00C78F91 /* configure.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = configure.sh; sourceTree = "<group>"; };
 		CDA6E632203B6B7800C78F91 /* objectiveSeeText.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = objectiveSeeText.png; path = ../../shared/images/objectiveSeeText.png; sourceTree = "<group>"; };
 		CDA6E634203B6B7900C78F91 /* objectiveSeeLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = objectiveSeeLogo.png; path = ../../shared/images/objectiveSeeLogo.png; sourceTree = "<group>"; };
-		CDAFF43F203E971F00F27635 /* com.nextlinux.macsf.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "com.nextlinux.macsf.plist"; path = "Configure/ConfigFiles/com.nextlinux.macsf.plist"; sourceTree = "<group>"; };
+		CDAFF43F203E971F00F27635 /* com.nextlinux.macsf.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = com.nextlinux.macsf.plist; path = Configure/ConfigFiles/com.nextlinux.macsf.plist; sourceTree = "<group>"; };
 		CDC37928250D49A300314064 /* consts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = consts.h; sourceTree = "<group>"; };
 		CDC37929250D49A300314064 /* utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utilities.h; sourceTree = "<group>"; };
 		CDC3792A250D49A300314064 /* utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = utilities.m; sourceTree = "<group>"; };
@@ -257,6 +257,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					4BE4905C10445E0A006BE471 = {
@@ -265,7 +266,6 @@
 					};
 					8D1107260486CEB800E47090 = {
 						DevelopmentTeam = JZSX36RFVJ;
-						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.HardenedRuntime = {
 								enabled = 1;
@@ -349,7 +349,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_ENTITLEMENTS = "helper/com.nextlinux.macsf.configHelper.entitlements";
+				CODE_SIGN_ENTITLEMENTS = helper/com.nextlinux.macsf.configHelper.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 2.4.3;
@@ -373,7 +373,7 @@
 					"-Wl,-sectcreate,__RESTRICT,__restrict,/dev/null",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nextlinux.macsf.configHelper;
-				PRODUCT_NAME = "com.nextlinux.macsf.configHelper";
+				PRODUCT_NAME = com.nextlinux.macsf.configHelper;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -386,7 +386,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_ENTITLEMENTS = "helper/com.nextlinux.macsf.configHelper.entitlements";
+				CODE_SIGN_ENTITLEMENTS = helper/com.nextlinux.macsf.configHelper.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2.4.3;
@@ -410,7 +410,7 @@
 					"-Wl,-sectcreate,__RESTRICT,__restrict,/dev/null",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nextlinux.macsf.configHelper;
-				PRODUCT_NAME = "com.nextlinux.macsf.configHelper";
+				PRODUCT_NAME = com.nextlinux.macsf.configHelper;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -426,10 +426,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 2.4.3;
-				DEVELOPMENT_TEAM = JZSX36RFVJ;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = NO;
@@ -455,10 +455,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 2.4.3;
-				DEVELOPMENT_TEAM = JZSX36RFVJ;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = NO;
